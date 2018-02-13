@@ -20,7 +20,7 @@
 #ifndef __STATS_H__
 #define __STATS_H__
 
-void print_statistics();
+void print_statistics(unsigned char* a, unsigned int b );
 
 /**
  * @brief <A function that prints the statistics of an array including minimum, maximum, mean, and median>
@@ -97,7 +97,7 @@ unsigned char find_minimum(unsigned char* a, unsigned int b );
  */
 
 
-void sort_arry(unsigned char* a, unsigned int b );
+void sort_array(unsigned char* a, unsigned int b );
 /**
  * @brief <Given an array of data and a length, sorts the array from largest to smallest. (The zeroth Element should be the largest value, and the last element (n-1) should be the smallest value>
  *
