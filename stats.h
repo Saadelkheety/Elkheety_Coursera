@@ -20,20 +20,90 @@
 #ifndef __STATS_H__
 #define __STATS_H__
 
-/* Add Your Declarations and Function Comments here */ 
+void print_statistics();
 
 /**
- * @brief <Add Brief Description of Function Here>
+ * @brief <A function that prints the statistics of an array including minimum, maximum, mean, and median>
  *
  * <Add Extended Description Here>
  *
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
+ * @return <does not return>
+ */
+
+void print_array(unsigned char* a, unsigned int b );
+/**
+ * @brief <Given an array of data and a length, prints the array to the screen>
  *
- * @return <Add Return Informaiton here>
+ * @param pointer to unsigned character to access the array
+ * @param unsigned integer to give the elements number
+ *
+ * @return <does not return>
  */
 
 
+
+unsigned char find_median(unsigned char* a, unsigned int b );
+/**
+ * @brief <Given an array of data and a length, returns the median value>
+ *
+ * this function calculates the median of the elements of the array
+ * by listing the numbers in numerical order from smallest to largest
+ * The median is the number that is halfway into the set. To find the median,
+ * the data should be arranged in order from least to greatest. If
+ * there is an even number of items in the data set, then the median is found
+ * by taking the mean (average) of the two middlemost numbers.
+ * 
+ * @param pointer to unsigned character to access the array
+ * @param unsigned integer to give the elements number
+ *
+ * @return <the median value rounded down to the nearest integer>
+ */
+
+unsigned char find_mean(unsigned char* a, unsigned int b );
+/**
+ * @brief <Given an array of data and a length, returns the mean.>
+ *
+ * this function calculates the mean by adding all the elements of the array and dividing by the number of elements.
+ *
+ * @param pointer to unsigned character to access the array
+ * @param unsigned integer to give the elements number
+ *
+ * @return <the median value rounded down to the nearest integer>
+ */
+
+unsigned char find_maximum(unsigned char* a, unsigned int b );
+/**
+ * @brief <Given an array of data and a length, returns the maximum>
+ *
+ * this function returns the maximum value of the elements in the given array.
+ *
+ * @param pointer to unsigned character to access the array
+ * @param unsigned integer to give the elements number
+ *
+ * @return <return the maximum element of the array>
+ */
+
+
+unsigned char find_minimum(unsigned char* a, unsigned int b );
+/**
+ * @brief <Given an array of data and a length, returns the minimum>
+ *
+ * this function returns the minimum value of the elements in the given array.
+ *
+ * @param pointer to unsigned character to access the array
+ * @param unsigned integer to give the elements number
+ *
+ * @return <return the minimum element of the array>
+ */
+
+
+void sort_arry(unsigned char* a, unsigned int b );
+/**
+ * @brief <Given an array of data and a length, sorts the array from largest to smallest. (The zeroth Element should be the largest value, and the last element (n-1) should be the smallest value>
+ *
+ * @param pointer to unsigned character to access the array
+ * @param unsigned integer to give the elements number
+ *
+ * @return <does not return>
+ */
 #endif /* __STATS_H__ */
